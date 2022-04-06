@@ -2,7 +2,8 @@
 <mat-toolbar *ngIf="errorMsg" color="war">{{ errorMsg }}</mat-toolbar>
 
 <div class="form-container">
-  <li><a routerLink="/appointment-list" routerLinkActive="active">Second Component</a></li>
+  <a routerLink="/appointment-list" routerLinkActive="active"><button mat-raised-button color="danger">Alle Termine ansehen</button></a>
+  
   <form (submit)="createAppointment()">
     <mat-form-field appearance="fill">
       <mat-label>Choose a date</mat-label>
